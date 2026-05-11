@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hahn Lawn Care</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7f2;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+      url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#2e8b57;
+      color:white;
+      padding:14px 28px;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#256f46;
+    }
+
+    section{
+      padding:70px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:2.5rem;
+      color:#2e8b57;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,.1);
+      text-align:center;
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#2e8b57;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:12px;
+    }
+
+    .contact{
+      background:#2e8b57;
+      color:white;
+      text-align:center;
+      border-radius:12px;
+      padding:50px;
+    }
+
+    .contact h2{
+      margin-bottom:20px;
+      font-size:2.5rem;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:800px){
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Hahn Lawn Care</h1>
+      <p>
+        Reliable, affordable, and hard-working lawn care by a young entrepreneur.
+        Keeping your yard clean, healthy, and looking its best.
+      </p>
+
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>Lawn Mowing</h3>
+        <p>
+          Professional mowing with attention to detail to keep your lawn neat and healthy.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Edging & Trimming</h3>
+        <p>
+          Clean edges and trimmed grass around sidewalks, fences, and driveways.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Leaf Cleanup</h3>
+        <p>
+          Fast and efficient cleanup to keep your yard looking fresh year-round.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Yard Maintenance</h3>
+        <p>
+          General yard care and maintenance you can depend on every week.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1599685315640-7e8a0d7c2f67?q=80&w=1200&auto=format&fit=crop" alt="Lawn Care">
+
+      <div>
+        <h3 style="margin-bottom:15px; color:#2e8b57;">
+          Young. Motivated. Hard Working.
+        </h3>
+
+        <p style="margin-bottom:15px;">
+          Hi, I’m Christian — a 16-year-old entrepreneur building my lawn care business
+          through hard work, consistency, and quality service.
+        </p>
+
+        <p style="margin-bottom:15px;">
+          I take pride in every yard I work on and treat every customer’s property
+          with respect and care.
+        </p>
+
+        <p>
+          Whether you need weekly mowing or a one-time cleanup, I’m here to help.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact Me</h2>
+
+      <p style="margin-bottom:20px;">
+        Ready for a clean, professional-looking yard?
+      </p>
+
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> hahnlawncare@email.com</p>
+
+      <br>
+
+      <a href="mailto:hahnlawncare@email.com" class="btn">
+        Email Me
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Hahn Lawn Care | Built with hard work 🌱</p>
+  </footer>
+
+</body>
+</html>
